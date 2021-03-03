@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/rotating-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+    
+
+    <style>
+        body {
+          background: #333;
+          font-family: 'Roboto Slab', sans-serif;
+          font-weight: 300;
+          overflow: hidden;
+        }
+        
+        .rotating-slider ul.slides li { color: #fff;box-sizing: content-box; }
+        
+        .rotating-slider ul.slides li:nth-of-type(1) { background: #3498db; }
+        
+        /* .rotating-slider ul.slides li:nth-of-type(2) { background: url('http://static.pexels.com/wp-content/uploads/2014/05/car-oldtimer-snow-342-825x550.jpg'); } */
+        
+        .rotating-slider ul.slides li:nth-of-type(3) { background: #e74c3c; }
+        
+        /* .rotating-slider ul.slides li:nth-of-type(4) { background: url('http://static.pexels.com/wp-content/uploads/2014/06/analog-camera-old-olympus-om-10-1528-825x550.jpg'); } */
+        
+        .rotating-slider ul.slides li:nth-of-type(5) { background: #f1c40f; }
+        
+        /* .rotating-slider ul.slides li:nth-of-type(6) { background: url(http://static.pexels.com/wp-content/uploads/2014/06/bridge-city-night-645-827x550.jpg); } */
+        
+        .rotating-slider ul.slides li .inner {
+          box-sizing: border-box;
+          padding: 2em;
+          height: 100%;
+          width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">test3</h1>
+        <p class="d-flex justify-content-between m-0"><a href="test2.html">prev</a><a href="test4.html">next</a></p>
+
+    </header>
+    <!-- <main> -->
+        <div class="rotating-slider">
+            <ul class="slides">
+              <li>
+                <div class="inner">
+                  <h2>jQuery Rotating Slider</h2>
+                  <p>A fancy rotator plugin.</p>
+                </div>
+              </li>
+              <li>
+                <div class="inner"></div>
+              </li>
+              <li>
+                <div class="inner">
+                  <h2>Slide 2</h2>
+                  <p>This is slide 2</p>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <h2>Slide 3</h2>
+                  <p>This is slide 3</p>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <h2>Slide 4</h2>
+                  <p>This is slide 4</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- <svg> -->
+                <!-- <defs>
+                    <clipPath id="slideClipPath">
+                        <path d="M 0 108.78360852643493 A 811.9719081026769 811.9719081026769 0 0 1 811.9719081026768 108.78360852643493 L 613.8320509596036 451.9719081026769 A 415.69219381653056 415.69219381653056 0 0 0 198.13985714307316 451.9719081026769 Z"></path>
+                    </clipPath>
+                </defs> -->
+            <!-- </svg> -->
+          </div>
+    <!-- </main> -->
+    <footer>
+
+    </footer>
+    
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
+    <script src="js/jquery.rotating-slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // $(function(){ 
+        //     $('.rotating-slider').rotatingSlider();
+        // });
+        // $('.rotating-slider').rotatingSlider({
+        //     autoRotate: true,
+        //     autoRotateInterval: 6000,
+        //     draggable: true,
+        //     directionControls: true,
+        //     directionLeftText: '&lsaquo;',
+        //     directionRightText: '&rsaquo;',
+        //     rotationSpeed: 750,
+        //     slideHeight : 360,
+        //     slideWidth : 480,
+        // });
+        $(function(){ 
+            $('.rotating-slider').rotatingSlider({
+                slideHeight : Math.min(360, window.innerWidth -80),
+                slideWidth : Math.min(480, window.innerWidth - 80),
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      
+      </script>
+</body>
+</html>
